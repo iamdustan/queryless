@@ -1,0 +1,19 @@
+{
+  "name": "css-queryless",
+  "version": "0.0.1",
+  "description": "Media queried CSS to non-media-queried CSS",
+  "keywords": ["css", "parser", "rework", "mediaqueries"],
+  "author": "Dustan Kasten <dustan.kasten@gmail.com>",
+  "dependencies": {
+    "debug": "~0.7.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "rework": "*"
+  },
+  "main": "index",
+  "scripts": {
+    "test": "mocha --require should --reporter spec"
+  }
+}
