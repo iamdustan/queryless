@@ -4,9 +4,7 @@
   "description": "Media queried CSS to non-media-queried CSS",
   "keywords": ["css", "parser", "rework", "mediaqueries"],
   "author": "Dustan Kasten <dustan.kasten@gmail.com>",
-  "dependencies": {
-    "debug": "~0.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*",
     "should": "*",
