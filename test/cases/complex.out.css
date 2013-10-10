@@ -1,0 +1,61 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.bitem {
+  position: relative;
+  padding: 0.5em;
+}
+
+.bitem--title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.bitem--subtitle {
+  font-size: 1em;
+  margin: 0;
+}
+
+.bitem--date {
+  font-size: 0.875em;
+  color: #909090;
+}
+
+.bitem--lendee {
+  margin: 1em 0;
+  font-size: 0.875em;
+  color: #666;
+}
+
+.bitem--lendee span {
+  display: block;
+}
+
+.bitem--lendee-name {
+  font-size: 1.16666em;
+  color: #333;
+}
+
+.bitem--date {
+  float: right;
+  margin-top: 1em;
+}
+
+.bitem--date {
+  position: absolute;
+  top: 1.75em;
+  right: 1.75em;
+  margin-top: 0;
+}
+
+@media print {
+  body {
+    color: #000;
+  }
+}
+

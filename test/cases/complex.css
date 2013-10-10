@@ -1,0 +1,102 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.bitem {
+  position: relative;
+  padding: 0.5em;
+}
+
+.bitem--title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.bitem--subtitle {
+  font-size: 1em;
+  margin: 0;
+}
+
+.bitem--date {
+  font-size: 0.875em;
+  color: #909090;
+}
+
+.bitem--lendee {
+  margin: 1em 0;
+  font-size: 0.875em;
+  color: #666;
+}
+
+.bitem--lendee span {
+  display: block;
+}
+
+.bitem--lendee-name {
+  font-size: 1.16666em;
+  color: #333;
+}
+
+.bitem--date {
+  float: right;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  [ng-controller="UserCtrl"] {
+    padding-top: 3.75em;
+    font-size: 0.875em;
+    text-align: right;
+  }
+
+  [ng-controller] > h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0.5em 0;
+    color: #fff;
+    background: #404040;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .container {
+    padding: 0 25%;
+    position: relative;
+  }
+
+  [ng-controller="UserCtrl"] {
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+  }
+
+  [ng-controller] > h1 {
+    background: #eee;
+    box-shadow: 0 1px 2px #ccc;
+    margin: 0 -50% 1em;
+    padding: 0.16666em 50% 0.333em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bitem--date {
+    position: absolute;
+    top: 1.75em;
+    right: 1.75em;
+    margin-top: 0;
+  }
+}
+
+@media print {
+  body {
+    color: #000;
+  }
+}

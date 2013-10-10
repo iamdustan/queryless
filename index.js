@@ -22,8 +22,13 @@ module.exports = function(queries) {
 
       // TODO: potentially concat all matching rulesets
       // together. CSS minifiers may already do this.
-      if (matchesQueries(rule.media, queries))
+      if (matchesQueries(rule.media, queries)) {
+        if (rule.media === 'print') {
+          rules.push(rule);
+          return rules;
+        }
         return rules.concat(rule.rules);
+      }
 
       return rules;
     }, []);
@@ -93,6 +98,8 @@ var VALUE_REGEX = /[^:]*:\s?(\w+)/;
  * @private
  */
 function stringToMediaQuery(rule) {
+  if (rule.match(/print/)) return new MediaQuery({ media: 'print' });
+
   var value = parseUnit(VALUE_REGEX.exec(rule)[1]);
 
   rule = rule.split(' ');

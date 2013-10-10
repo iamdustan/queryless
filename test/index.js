@@ -29,6 +29,10 @@ describe('should support', function(){
 function createMediaQuery(filename) {
   if (filename === 'noop') return;
   if (filename === 'none') return 'none';
+  if (filename === 'complex') return [
+    'print',
+    'screen and (min-width: 1000px)'
+  ];
 
   filename = filename.split('_');
   return [filename[0] + ' and (' + filename[1] + ': ' + filename[2] + ')'];
