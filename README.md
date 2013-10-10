@@ -14,7 +14,7 @@ media queries you would like to extract.
 // larger than 600px wide and the print media block.
 
 var keepmatches = [
-  'screen and (min-width: 600px)', // currently only supports pixels
+  'screen and (min-width: 600px)', // assumes the units entered here are the same used in your CSS.
   'print'
 ];
 
