@@ -7,7 +7,9 @@ browsers such as IE8.
 ## Usage
 
 Simply pass in queryless to your rework pipeline with an array of
-media queries you would like to extract.
+media queries you would like to extract. The match is based on the media
+queries you are using in your project. They don't have to be an exact
+match, but is a subset. Look in `test/cases` for examples.
 
 ```
 // Create a stylesheet with all media queries that match
@@ -22,6 +24,15 @@ var css = rework(input)
   .use(queryless(keepmatches))
   .toString();
 ```
+
+## Upgrade Note
+
+The 0.0.x branch was much more complex and attempted to dynamically
+resolve media queries. This was over-complicated waste&mdash;you know your
+media-queries best.
+
+In 0.1.x the match is string based. It should be much quicker and much
+more dependable in complex situations.
 
 ## License
 

@@ -31,7 +31,7 @@ function createMediaQuery(filename) {
   if (filename === 'none') return 'none';
   if (filename === 'complex') return [
     'print',
-    'screen and (min-width: 1000px)'
+    'only screen and (min-width: 1024px)'
   ];
 
   filename = filename.split('_');

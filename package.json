@@ -1,6 +1,6 @@
 {
   "name": "css-queryless",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Media queried CSS to non-media-queried CSS",
   "keywords": [
     "css",
