@@ -1,5 +1,7 @@
 # Queryless, with Rework
 
+[![Code Climate](https://codeclimate.com/github/iamdustan/queryless.png)](https://codeclimate.com/github/iamdustan/queryless)
+
 Queryless is a [rework](https://github.com/visionmedia/rework) utility
 to automatically create media-query free stylesheets for archaic
 browsers such as IE8.
